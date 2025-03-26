@@ -5,24 +5,24 @@ import { validateText } from './utils';
 export function activate(context: vscode.ExtensionContext) {
 	const disposable = vscode.commands.registerCommand('korean-variable-translator.translate', async () => {
 		const config = vscode.workspace.getConfiguration('koreanVariableTranslator');
-		const apiKey = config.get<string>('deeplApiKey');
+		const apiKey = config.get<string>('apiKey');
 	
 		if (!apiKey) {
-			vscode.window.showWarningMessage('Deepl API 키를 등록해주세요.', { modal: true });
+			vscode.window.showWarningMessage('DeepL API 키 등록이 필요합니다.', { modal: true });
 	
 			return;
 		}
 
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) {
-			vscode.window.showWarningMessage('에디터가 열려있는 상태에서 시도해주세요!');
+			vscode.window.showWarningMessage('에디터가 열려있는 상태에서 시도해주세요.');
 
 			return;
 		}
 
 		const selection = editor.selection;
 		if (!selection || selection.isEmpty) {
-			vscode.window.showWarningMessage('변수명으로 변환할 단어 또는 문장을 선택해주세요!');
+			vscode.window.showWarningMessage('변수명으로 변환할 단어 또는 문장을 선택해주세요.');
 
 			return;
 		}

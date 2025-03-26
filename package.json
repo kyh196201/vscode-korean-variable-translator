@@ -22,10 +22,10 @@
       {
         "title": "Korean Variable Translator",
         "properties": {
-          "koreanVariableTranslator.deeplApiKey" : {
+          "koreanVariableTranslator.apiKey": {
             "type": "string",
             "default": "",
-            "description": "Deepl API 키를 입력해주세요."
+            "description": "DeepL API 키를 입력해주세요."
           }
         }
       }
@@ -33,7 +33,7 @@
     "commands": [
       {
         "command": "korean-variable-translator.translate",
-        "title": "Translate Korean to Variable Name",
+        "title": "한글 → 변수명으로 변환 🔤",
         "when": "editorHasSelection"
       }
     ],
