@@ -1,11 +1,36 @@
 {
   "name": "korean-variable-translator",
-  "displayName": "vscode-korean-variable-translator",
+  "displayName": "Korean Variable Translator",
   "description": "한글로 입력한 변수명을 영문 변수명으로 변환합니다.",
+  "publisher": "SEUNGWOOKIM",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.98.0"
   },
+  "keywords": [
+    "korean",
+    "variable",
+    "translator",
+    "변수명",
+    "번역",
+    "변환",
+    "한글",
+    "deepL"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyh196201/vscode-korean-variable-translator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kyh196201/vscode-korean-variable-translator/issues",
+    "email": "kyh196201@gmail.com"
+  },
+  "author": {
+    "name": "Seungwoo Kim",
+    "email": "kyh196201@gmail.com",
+    "url": "https://github.com/kyh196201"
+  },
+  "license": "MIT",
   "categories": [
     "Other"
   ],
