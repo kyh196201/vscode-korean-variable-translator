@@ -3,9 +3,9 @@
   "displayName": "Korean Variable Translator",
   "description": "한글로 입력한 변수명을 영문 변수명으로 변환합니다.",
   "publisher": "SEUNGWOOKIM",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
-    "vscode": "^1.98.0"
+    "vscode": "^1.96.2"
   },
   "keywords": [
     "korean",
